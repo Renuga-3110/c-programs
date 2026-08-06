@@ -1,0 +1,19 @@
+include<stdio.h>
+#include<math.h>
+int main()
+{
+int a,b,c,t;
+float root1,root2;
+printf("enter the three values");
+scanf("%d%d%d",&a,&b,&c);
+t=((pow(b,2))-(4*a*c));
+root1=((-b)+(sqrt(t)))/(2*a);
+root2=((-b)-(sqrt(t)))/(2*a);
+printf("the roots are:%f%f",root1,root2);
+if(t>0)
+ printf(" %d the roots are real and unequal,t");
+else if(t=0)
+ printf(" %d the roots are real and equal,t");
+else
+ printf(" %d the roots are real and imaginary,t");
+ }
